@@ -1,0 +1,33 @@
+<style>
+body{
+background-image: url("https://3l4jojspj4-flywheel.netdna-ssl.com/wp-content/uploads/iStock-921951792.jpg");
+background-repeat: no-repeat;
+}
+li{
+color: white;
+}
+h2{
+color:white; 
+}
+</style>
+<table>
+<h1>Thank you. Here is the information you provided:</h1>
+<ul>
+	<li>Age:      {{session['age']}}</li>
+	<li>Sex:      {{session['sex']}}</li>
+	<li>CP:       {{session['cp']}}</li>
+	<li>BP:       {{session['trestbps']}}</li>
+	<li>Chol:     {{session['chol']}}</li>
+	<li>Fbs:      {{session['fbs']}}</li>
+	<li>Res:      {{session['restecg']}}</li>
+	<li>Tha:      {{session['thalach']}}</li>
+	<li>Exa:      {{session['exang']}}</li>
+	<li>Pek:      {{session['oldpeak']}}</li>
+	<li>Slp:      {{session['slope']}}</li>
+	<li>Ca:       {{session['ca']}}</li>
+	<li>Thl:     {{session['thal']}}</li>
+</ul>
+</table>
+<h2>Your Predicted Heart Disease Class is: {{results}}: </h2>
+<h2>A result of 0 means you show no obvious signs of heart disease</h2>
+<h2>A result of 1 means you show signs of heart disease and should consult a medical professional</h2>
